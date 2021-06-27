@@ -4,6 +4,7 @@ var buttonColours=["red", "blue", "green", "yellow" ];
 
 var level=0;
 started=false;
+var highScore=0;
 
 $(document).keypress(function(){
     if(!started){
@@ -57,6 +58,11 @@ function nextSequence(){
     userClickedPattern=[];
     level++;
     $("#level-title").text("Level "+level);
+
+    if(level>highScore){
+        highScore=level-1;
+    }
+    $("#high-score").text("High Score :"+highScore);
 
     var randomNumber=Math.floor(Math.random()*4);
     var randomChosenColour=buttonColours[randomNumber];
