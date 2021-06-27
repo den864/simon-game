@@ -5,10 +5,19 @@ body {
 
 #level-title {
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  text-shadow: 3px 0 #423c3f;
   font-size: 3rem;
-  margin:  5%; 
+  margin:  5%;
+  margin-bottom: 2.3%; 
   color: #FEF2BF;
+}
+
+#high-score{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.8rem;
+  margin: 2%;
+  color: #d1b63c;
+  text-transform: uppercase;
 }
 
 .container {
